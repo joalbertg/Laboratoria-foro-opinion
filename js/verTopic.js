@@ -29,9 +29,9 @@ const begin = () => {
     const paintResponse = response => {
       const infoMessage = `
       <li class="collection-item dismissable">
-        <div>${response.content}
+        <div>${response.author_name}
           <a href="#!" class="secondary-content">
-            <span class="new badge">${response.author_name}</span>
+            <span class="new badge">${response.content}</span>
           </a>
         </div>
       </li>`;
