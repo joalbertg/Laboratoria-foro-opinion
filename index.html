@@ -1,0 +1,122 @@
+<!-- mostrar en este HTML los TOPICS de /topics -->
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <title>Themes</title>
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="./vendors/css/materialize/css/materialize.min.css">
+  <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="row">
+      <div class="col s12">
+        <header>
+          <h1 class="center-align">Foro cool</h1>
+        </header>
+      </div>
+      <form id="form_search" class="col s8">
+        <div class="row">
+          <div class="input-field col s12">
+            <input id="search_theme" type="text" class="validate">
+            <label for="search_theme">Search Theme</label>
+          </div>
+        </div>
+      </form>
+      <div class="col s4 center-align">
+        <button id="create" class="btn waves-effect waves-light btn-large" type="submit" name="action">Create theme
+          <i class="material-icons right">send</i>
+        </button>
+      </div>
+    </div>
+    <!-- Modal Structure -->
+    <div id="modal1" class="modal">
+      <div class="container">
+        <div class="row">
+          <form id="form_create">
+            <div class="row">
+              <div class="input-field col s12">
+                <input id="input_theme" type="text" data-length="10">
+                <label for="input_theme">New Theme</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s12">
+                <input id="input_author" type="text" data-length="10">
+                <label for="input_author">Author</label>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+                <i class="material-icons right">send</i>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col s12">
+      <table class="highlight responsive-table">
+        <thead>
+          <tr>
+            <th>Theme</th>
+            <th>Author</th>
+            <th>Responses</th>
+            <th>Search</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>Theme</td>
+            <td>Joalbert</td>
+            <td>2</td>
+            <td>
+              <a href="../views/verTopic.html?topic_id=${id}">
+                <i class="material-icons">search</i>
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td>Theme</td>
+            <td>Joalbert</td>
+            <td>2</td>
+            <td>
+              <a href="../views/verTopic.html?topic_id=${id}">
+                <i class="material-icons">search</i>
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td>Theme</td>
+            <td>Joalbert</td>
+            <td>2</td>
+            <td>
+              <a href="../views/verTopic.html?topic_id=${id}">
+                <i class="material-icons">search</i>
+              </a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- jQuery -->
+  <script src="./vendors/js/jquery.min.js"></script>
+  <script src="./vendors/css/materialize/js/materialize.min.js"></script>
+
+  <script src="js/functions.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>

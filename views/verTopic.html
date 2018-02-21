@@ -1,0 +1,88 @@
+<!-- Mostrar en este HTML las respuestas de cada topic -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Topic</title>
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="../vendors/css/materialize/css/materialize.min.css">
+  <link rel="stylesheet" href="../css/main.css">
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="row">
+      <div class="col s12">
+        <div class="card blue-grey darken-1">
+          <div class="card-content white-text">
+            <span id="message-theme" class="card-title">Card Title</span>
+            <p>Publicado:
+              <span id="publication-day">24/11/88</span>
+            </p>
+          </div>
+          <div class="card-action">
+            <a href="#">
+              <span id="author-theme">author</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s12">
+        <a id="btnResponse" class="waves-effect waves-light btn-large">
+          <i class="material-icons right">feedback</i>New Comment</a>
+      </div>
+    </div>
+    <div class="row">
+      <ul id="container-messages" class="collection">
+        <li class="collection-item dismissable">
+          <div>Alvin
+            <a href="#!" class="secondary-content">
+              <span class="new badge">4</span>
+            </a>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <!-- Modal Structure -->
+    <div id="modal1" class="modal">
+      <div class="container">
+        <div class="row">
+          <form id="form_comment">
+            <div class="row">
+              <div class="input-field col s12">
+                <input id="input_comment" type="text" data-length="280">
+                <label for="input_comment">New Comment</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s12">
+                <input id="input_author" type="text" data-length="10">
+                <label for="input_author">Author</label>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+                <i class="material-icons right">send</i>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- jQuery -->
+  <script src="../vendors/js/jquery.min.js"></script>
+  <script src="../vendors/css/materialize/js/materialize.min.js"></script>
+
+  <script src="../js/functions.js"></script>
+  <script src="../js/verTopic.js"></script>
+</body>
+
+</html>
