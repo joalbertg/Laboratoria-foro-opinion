@@ -19,7 +19,7 @@ const begin = () => {
           <td id="titleTheme">${theme.content}</td>
           <td>${theme.author_name}</td>
           <td>${isNew ? 0 : theme.responses_count}</td>
-          <td><a href="../views/verTopic.html?topic_id=${theme.id}"><i class="material-icons">search</i></a></td>
+          <td><a href="./views/verTopic.html?topic_id=${theme.id}"><i class="material-icons">search</i></a></td>
         </tr>`;
       return infoThemes;
     };
